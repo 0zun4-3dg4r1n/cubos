@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+
+.main .content {
+    position: relative;
+    z-index: 4;
+}
+
+.main .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    margin-top: 90px;
+}
+
+.main .title {
+    font-size: 70px;
+    color: #FFFFFF;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+    text-align: center;
+    margin-top: 90px;
+}
+
+.main .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.main .button {
+    margin-right: 15px;
+}
+
+.main .custom-button {
+    background: #0a0a44;
+    border-radius: 999px;
+    box-shadow: #0a0a44 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 15px 40px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    transition-duration: 0.4s;
+}
+
+.main .custom-button:hover {
+    background-color: #181875;
+    color: white;
+}
+
+.footer {
+    color: #FFFFFF;
+    font-size: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 18px;
+    text-align: center;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+}
