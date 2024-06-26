@@ -6,6 +6,11 @@ a {
     text-decoration: none;
 }
 
+img{
+    margin-left: 45%;
+    width: 60px;
+}
+
 .main {
     background-position: center center;
     background-size: cover;
