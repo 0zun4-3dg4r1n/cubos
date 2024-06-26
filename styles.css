@@ -2,6 +2,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 .main {
     background-position: center center;
     background-size: cover;
@@ -23,25 +27,13 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
     margin-top: 90px;
 }
 
 .main .title {
-    font-size: 70px;
     color: #FFFFFF;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
     text-align: center;
-    margin-top: 90px;
-}
-
-.main .button-container {
-    display: flex;
-    justify-content: center;
-}
-
-.main .button {
-    margin-right: 15px;
 }
 
 .main .custom-button {
@@ -51,17 +43,11 @@ body {
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
-    font-size: 20px;
     font-weight: 600;
     line-height: 24px;
     opacity: 1;
     outline: 0 solid transparent;
-    padding: 15px 40px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
     width: fit-content;
-    word-break: break-word;
     border: 0;
     transition-duration: 0.4s;
 }
@@ -73,7 +59,6 @@ body {
 
 .footer {
     color: #FFFFFF;
-    font-size: 20px;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -81,4 +66,65 @@ body {
     padding-bottom: 18px;
     text-align: center;
     text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
+}
+
+@media screen and (min-width: 600px) {
+    .main .logo {
+        width: 25%;
+    }
+
+    .main .title {
+        font-size: 70px;
+        margin-top: 90px;
+    }
+
+    .main .button-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .button {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .main .custom-button {
+        font-size: 20px;
+        padding: 15px 40px;
+    }
+
+    .footer {   
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main .logo {
+        width: 60%;
+    }
+
+    .main .title {
+        font-size: 50px;
+        margin-top: 60px;
+    }
+
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main .button {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .main .custom-button {
+        font-size: 17px;
+        padding: 12px 27px;
+    }
+
+    .footer {
+        font-size: 15px;
+    }
 }
